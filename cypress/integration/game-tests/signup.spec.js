@@ -1,4 +1,4 @@
-import {generateUsername} from '../../support/utils/common'
+import { generateUsername } from "../../support/utils/common";
 
 describe("SignUp flow tests", () => {
   beforeEach(() => {
@@ -30,7 +30,7 @@ describe("SignUp flow tests", () => {
         .contains("Sign Up")
         .should("be.visible");
       signupBtn.click();
-      cy.contains( "incorrect user name and password"); // TODO find the message to be displayed when form is submitted with all the fields empty
+      cy.contains("incorrect user name and password"); // TODO find the message to be displayed when form is submitted with all the fields empty
       cy.screenshot();
     });
 
@@ -74,9 +74,9 @@ describe("SignUp flow tests", () => {
       cy.get("button").contains("Cancel").click();
       cy.get("#signupbtn").contains("Sign Up").should("not.be.visible");
       cy.get("#rego").click();
-      cy.get("#uname").should("not.have.value","appleapple");
-      cy.get("#pwd").should("not.have.value","123");
-      cy.get("#psw-repeat").should("not.contain.value","123");
+      cy.get("#uname").should("not.have.value", "appleapple");
+      cy.get("#pwd").should("not.have.value", "123");
+      cy.get("#psw-repeat").should("not.contain.value", "123");
       cy.screenshot();
     });
   });

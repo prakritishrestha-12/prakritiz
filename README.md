@@ -5,7 +5,7 @@ Some readings on why cypress and cypress setup guidelines:
 * [Why Cypress](https://docs.cypress.io/guides/overview/why-cypress)
 * [Setup guidelines](https://docs.cypress.io/guides/getting-started/installing-cypress)
 
-## To run locally
+## Run locally
 Clone repo: ```git clone https://github.com/prakritishrestha-12/prakritiz.git``` \
 Install packages: ```npm install``` \
 To open and run cypress with browser: ```npx cypress open``` \

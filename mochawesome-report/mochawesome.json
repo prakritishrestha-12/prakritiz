@@ -5,9 +5,9 @@
     "passes": 6,
     "pending": 0,
     "failures": 2,
-    "start": "2022-05-11T14:38:16.731Z",
-    "end": "2022-05-11T14:38:48.112Z",
-    "duration": 31381,
+    "start": "2022-05-12T01:34:40.274Z",
+    "end": "2022-05-12T01:35:18.402Z",
+    "duration": 38128,
     "testsRegistered": 8,
     "passPercent": 75,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b1e01ac8-78e5-478f-b52c-5d15c9f3020b",
+      "uuid": "401679e0-4cd5-45dd-8268-8d0b698780d3",
       "title": "",
       "fullFile": "cypress/integration/game-tests/signup.spec.js",
       "file": "cypress/integration/game-tests/signup.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2ad57e01-8358-47d8-bf54-56177051d530",
+          "uuid": "2cf08d5e-bc29-4b08-b859-ffce8696219c",
           "title": "SignUp flow tests",
           "fullFile": "",
           "file": "",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "22972fab-cbc8-4588-9d7b-84c24803b905",
+              "uuid": "dc2b0a58-6c9a-4c59-be73-b9ec6128bec6",
               "title": "UI tests",
               "fullFile": "",
               "file": "",
@@ -47,7 +47,7 @@
                   "title": "should have all the fields visible",
                   "fullTitle": "SignUp flow tests UI tests should have all the fields visible",
                   "timedOut": null,
-                  "duration": 3398,
+                  "duration": 3345,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -56,26 +56,26 @@
                   "context": null,
                   "code": "cy.get(\"h1\").should(\"contain.text\", \"Sign Up\");\ncy.get(\"p\").should(\"contain.text\", \"Please fill in this form to create an account.\");\ncy.get(\"#uname\").should(\"be.visible\");\ncy.get(\"input\").invoke(\"attr\", \"for\", \"psw\").should(\"be.visible\");\ncy.get(\"input\").invoke(\"attr\", \"for\", \"psw-repeat\").should(\"be.visible\");\ncy.get(\"button\").contains(\"Cancel\").should(\"be.visible\");\ncy.get(\"#signupbtn\").contains(\"Sign Up\").should(\"be.visible\");\ncy.screenshot();",
                   "err": {},
-                  "uuid": "00d9d9ab-6e06-4207-89f8-54dd31c01394",
-                  "parentUUID": "22972fab-cbc8-4588-9d7b-84c24803b905",
+                  "uuid": "263442d9-d30c-4276-8be1-674dbb62b9c1",
+                  "parentUUID": "dc2b0a58-6c9a-4c59-be73-b9ec6128bec6",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "00d9d9ab-6e06-4207-89f8-54dd31c01394"
+                "263442d9-d30c-4276-8be1-674dbb62b9c1"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 3398,
+              "duration": 3345,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "da2df05d-751a-41a3-afa7-d42313860a33",
+              "uuid": "37e0ae3c-0457-44a2-82fa-af7b896c677b",
               "title": "Unsuccessful signup tests",
               "fullFile": "",
               "file": "",
@@ -86,7 +86,7 @@
                   "title": "should show error when form is submitted with empty fields",
                   "fullTitle": "SignUp flow tests Unsuccessful signup tests should show error when form is submitted with empty fields",
                   "timedOut": null,
-                  "duration": 5192,
+                  "duration": 5270,
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -99,8 +99,8 @@
                     "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'incorrect user name and password' but never did.\n    at Context.eval (https://responsivefight.herokuapp.com/__cypress/tests?p=cypress/integration/game-tests/signup.spec.js:123:10)",
                     "diff": null
                   },
-                  "uuid": "55d5506e-298b-4ac9-a592-4875c60c7353",
-                  "parentUUID": "da2df05d-751a-41a3-afa7-d42313860a33",
+                  "uuid": "b15038b5-4ed2-4e82-bc99-0633eed3486a",
+                  "parentUUID": "37e0ae3c-0457-44a2-82fa-af7b896c677b",
                   "isHook": false,
                   "skipped": false
                 },
@@ -108,7 +108,7 @@
                   "title": "should not let user enter more than 10 chars in username",
                   "fullTitle": "SignUp flow tests Unsuccessful signup tests should not let user enter more than 10 chars in username",
                   "timedOut": null,
-                  "duration": 1988,
+                  "duration": 1908,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -117,8 +117,8 @@
                   "context": null,
                   "code": "cy.get(\"#uname\").type(\"A1234567890\");\ncy.get(\"#uname\").should(\"have.value\", \"A123456789\");\ncy.screenshot();",
                   "err": {},
-                  "uuid": "d8ab1f1e-d91d-456b-87ea-fd9dd4914495",
-                  "parentUUID": "da2df05d-751a-41a3-afa7-d42313860a33",
+                  "uuid": "55e1202b-4504-4ce3-9797-1d89af9fd7d6",
+                  "parentUUID": "37e0ae3c-0457-44a2-82fa-af7b896c677b",
                   "isHook": false,
                   "skipped": false
                 },
@@ -126,7 +126,7 @@
                   "title": "should show error if passwords don't match",
                   "fullTitle": "SignUp flow tests Unsuccessful signup tests should show error if passwords don't match",
                   "timedOut": null,
-                  "duration": 2484,
+                  "duration": 2413,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -135,8 +135,8 @@
                   "context": null,
                   "code": "cy.get(\"#uname\").type(\"abcdabcd\");\ncy.get(\"#pwd\").type(\"123\");\ncy.get(\"#psw-repeat\").type(\"124\");\ncy.get(\"#signupbtn\").click();\ncy.get(\"#popup\").should(\"contain.text\", \"Passwords do not match\");\ncy.screenshot();",
                   "err": {},
-                  "uuid": "89491b2d-1436-4672-886b-ac036d25e9f2",
-                  "parentUUID": "da2df05d-751a-41a3-afa7-d42313860a33",
+                  "uuid": "83a9077e-b5aa-4842-87ef-1de3466b6bbc",
+                  "parentUUID": "37e0ae3c-0457-44a2-82fa-af7b896c677b",
                   "isHook": false,
                   "skipped": false
                 },
@@ -144,7 +144,7 @@
                   "title": "should show error if user already exists",
                   "fullTitle": "SignUp flow tests Unsuccessful signup tests should show error if user already exists",
                   "timedOut": null,
-                  "duration": 3942,
+                  "duration": 3921,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -153,8 +153,8 @@
                   "context": null,
                   "code": "cy.get(\"#uname\").type(\"appleapple\");\ncy.get(\"#pwd\").type(\"123\");\ncy.get(\"#psw-repeat\").type(\"123\");\ncy.get(\"#signupbtn\").click();\ncy.get(\"#popup\").should(\"contain.text\", \"User already exists\");\ncy.screenshot();",
                   "err": {},
-                  "uuid": "c1d6f508-de95-4ba4-9b4f-3397b6cc0c3f",
-                  "parentUUID": "da2df05d-751a-41a3-afa7-d42313860a33",
+                  "uuid": "c37be501-0c5f-45b9-8ccf-a75419114996",
+                  "parentUUID": "37e0ae3c-0457-44a2-82fa-af7b896c677b",
                   "isHook": false,
                   "skipped": false
                 },
@@ -162,7 +162,7 @@
                   "title": "should exit the signup screen on Cancel button click",
                   "fullTitle": "SignUp flow tests Unsuccessful signup tests should exit the signup screen on Cancel button click",
                   "timedOut": null,
-                  "duration": 2455,
+                  "duration": 2269,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -171,8 +171,8 @@
                   "context": null,
                   "code": "cy.get(\"#uname\").type(\"appleapple\");\ncy.get(\"#pwd\").type(\"123\");\ncy.get(\"#psw-repeat\").type(\"123\");\ncy.get(\"button\").contains(\"Cancel\").click();\ncy.get(\"#signupbtn\").contains(\"Sign Up\").should(\"not.be.visible\");\ncy.screenshot();",
                   "err": {},
-                  "uuid": "8baf1ef7-e576-4406-b1bd-eee1d6a53a34",
-                  "parentUUID": "da2df05d-751a-41a3-afa7-d42313860a33",
+                  "uuid": "b39cf418-832c-41f3-8a2b-b3dd52ab068b",
+                  "parentUUID": "37e0ae3c-0457-44a2-82fa-af7b896c677b",
                   "isHook": false,
                   "skipped": false
                 },
@@ -180,7 +180,7 @@
                   "title": "should clear screen input fields after cancel",
                   "fullTitle": "SignUp flow tests Unsuccessful signup tests should clear screen input fields after cancel",
                   "timedOut": null,
-                  "duration": 5872,
+                  "duration": 13166,
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -193,32 +193,32 @@
                     "estack": "AssertionError: Timed out retrying after 4000ms: expected '<input#uname.center>' not to have value 'appleapple'\n    at Context.eval (https://responsivefight.herokuapp.com/__cypress/tests?p=cypress/integration/game-tests/signup.spec.js:163:24)",
                     "diff": ""
                   },
-                  "uuid": "d9658283-cfdc-49a2-bfd1-444093392432",
-                  "parentUUID": "da2df05d-751a-41a3-afa7-d42313860a33",
+                  "uuid": "70aaf431-7e1d-4e83-80bb-67c103bb492b",
+                  "parentUUID": "37e0ae3c-0457-44a2-82fa-af7b896c677b",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "d8ab1f1e-d91d-456b-87ea-fd9dd4914495",
-                "89491b2d-1436-4672-886b-ac036d25e9f2",
-                "c1d6f508-de95-4ba4-9b4f-3397b6cc0c3f",
-                "8baf1ef7-e576-4406-b1bd-eee1d6a53a34"
+                "55e1202b-4504-4ce3-9797-1d89af9fd7d6",
+                "83a9077e-b5aa-4842-87ef-1de3466b6bbc",
+                "c37be501-0c5f-45b9-8ccf-a75419114996",
+                "b39cf418-832c-41f3-8a2b-b3dd52ab068b"
               ],
               "failures": [
-                "55d5506e-298b-4ac9-a592-4875c60c7353",
-                "d9658283-cfdc-49a2-bfd1-444093392432"
+                "b15038b5-4ed2-4e82-bc99-0633eed3486a",
+                "70aaf431-7e1d-4e83-80bb-67c103bb492b"
               ],
               "pending": [],
               "skipped": [],
-              "duration": 21933,
+              "duration": 28947,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "c7196866-91d2-4ac6-9bc9-7700078b90c0",
+              "uuid": "4ad78cc2-897c-4b5f-915b-6f8b8132a192",
               "title": "Successful signup tests",
               "fullFile": "",
               "file": "",
@@ -229,7 +229,7 @@
                   "title": "should successfully create user",
                   "fullTitle": "SignUp flow tests Successful signup tests should successfully create user",
                   "timedOut": null,
-                  "duration": 4312,
+                  "duration": 4293,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -238,20 +238,20 @@
                   "context": null,
                   "code": "const username = (0, _common.generateUsername)(10);\ncy.get(\"#uname\").type(username);\ncy.get(\"#pwd\").type(\"123\");\ncy.get(\"#psw-repeat\").type(\"123\");\ncy.get(\"#signupbtn\").click();\ncy.contains(\"Login with your warrior name\");\ncy.get(\"#worrior_username\").should(\"have.value\", username);\ncy.get(\"#warrior\").should(\"have.text\", \"Login warrior\");\ncy.get(\"#close\").should(\"be.visible\");\ncy.screenshot();",
                   "err": {},
-                  "uuid": "3fa2a1a9-1d09-4671-9324-14f52f650262",
-                  "parentUUID": "c7196866-91d2-4ac6-9bc9-7700078b90c0",
+                  "uuid": "a8a6d71d-24c1-48a5-8bdd-832c09437609",
+                  "parentUUID": "4ad78cc2-897c-4b5f-915b-6f8b8132a192",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "3fa2a1a9-1d09-4671-9324-14f52f650262"
+                "a8a6d71d-24c1-48a5-8bdd-832c09437609"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 4312,
+              "duration": 4293,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
