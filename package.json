@@ -1,0 +1,28 @@
+{
+  "name": "game-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prakritishrestha-12/prakritiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prakritishrestha-12/prakritiz/issues"
+  },
+  "homepage": "https://github.com/prakritishrestha-12/prakritiz#readme",
+  "devDependencies": {
+    "cypress": "^9.6.1",
+    "cypress-multi-reporters": "^1.6.0",
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "unique-username-generator": "^1.0.1"
+  }
+}
