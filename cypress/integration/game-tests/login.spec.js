@@ -47,5 +47,5 @@ describe("SignUp flow tests", () => {
             cy.get(".btn").contains("Login warrior").click();
             cy.get("#login_popup").contains("Wrong username or password");
         });
-    })
+    });
 });
