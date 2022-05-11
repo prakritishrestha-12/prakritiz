@@ -1,4 +1,4 @@
-describe("SignUp flow tests", () => {
+describe("Login flow tests", () => {
     beforeEach(() => {
         cy.visit("https://responsivefight.herokuapp.com/");
         cy.get("#login").click();
