@@ -17,7 +17,11 @@ If npx isn't preinstalled check [here](https://github.com/npm/npx).
 Specs are created in /cypress/integration/game-tests.
 
 ## Generate report
-Run `npx cypress run --reporter mochawesome` to generate mochawesome report.
+Run `npx cypress run --reporter mochawesome` to generate mochawesome report.</br>
+
+Reports are created in /mochawesome-report</br>
+
+Check https://raw.githack.com/prakritishrestha-12/prakritiz/main/mochawesome-report/mochawesome.html to view the report generated with mochawesome.
 
 ## Continuous Integration
 For continuous integration, it's using gitlab. Pipeline has been set to run with headless, but it requires validating account so currently pipeline fails for that reason. </br>
