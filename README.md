@@ -26,5 +26,5 @@ Here is the pipeline for one of the commits https://gitlab.com/prakritishrestha-
 
 npm commands:\
 to run headless: `npm run runHeadless`\
-to run headed with chrome `npm runrunHeaded`
+to run headed with chrome `npm run runHeaded`
 

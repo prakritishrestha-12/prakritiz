@@ -7,22 +7,6 @@ describe("Leaderboard tests", () => {
     cy.get(".btn").contains("Login warrior").click();
     cy.get(".btn").contains("Start your journey applekiwis");
     cy.visit("https://responsivefight.herokuapp.com/leaderboard");
-
-    // TODO make it generate auth token abd use it everytime for 3 days expiry issue
-    cy.request({
-      method: "PUT",
-      url: "https://supervillain.herokuapp.com/v1/user",
-      form: true,
-      headers: {
-        "Content-Type": "application/json",
-        Authorization:
-          "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIxMjMxMjMxMjMxIiwiZW1haWwiOiJzaC5wcmFrcml0aUBnbWFpbC5jb20iLCJpYXQiOjE2NTIyNDYzNTAsImV4cCI6MTY1MjUwNTU1MH0.syKMK8lRDZocP-7QLY6pWy0TFX5q9K-hNzN4-19uEl2fDuXe10GRcn-Rzmmu1lmm2cGttWSVpsMdqYI9KEPkWA",
-      },
-      body: {
-        username: "applekiwis",
-        score: 4000,
-      },
-    });
   });
 
   it("should have elements present", () => {
@@ -32,6 +16,22 @@ describe("Leaderboard tests", () => {
   });
 
   it("should display correct points", () => {
+    // TODO make it generate auth token after 3 days expiry
+    cy.request({
+      method: "PUT",
+      url: "https://supervillain.herokuapp.com/v1/user",
+      form: true,
+      headers: {
+        "Content-Type": "application/json",
+        Authorization:
+            "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIxMjMxMjMxMjMxIiwiZW1haWwiOiJzaC5wcmFrcml0aUBnbWFpbC5jb20iLCJpYXQiOjE2NTIyNDYzNTAsImV4cCI6MTY1MjUwNTU1MH0.syKMK8lRDZocP-7QLY6pWy0TFX5q9K-hNzN4-19uEl2fDuXe10GRcn-Rzmmu1lmm2cGttWSVpsMdqYI9KEPkWA",
+      },
+      body: {
+        username: "applekiwis",
+        score: 4000,
+      },
+    });
+
     cy.get("p").contains("COVID-19 THE GAME - LEADERBOARD");
     cy.get("#leaderboard_link").should("be.visible");
     cy.get(".ticker-item").contains(
