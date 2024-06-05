@@ -1,7 +1,7 @@
 ## About repo
 This is a test automation repo for https://responsivefight.herokuapp.com based on Cypress framework.</br> 
 Cypress framework is a JavaScript-based end-to-end testing framework built on top of Mocha. </br> 
-Some readings on why cypress and cypress setup guidelines:
+For some readings on why cypress and cypress setup guidelines:
 * [Why Cypress](https://docs.cypress.io/guides/overview/why-cypress)
 * [Setup guidelines](https://docs.cypress.io/guides/getting-started/installing-cypress)
 
